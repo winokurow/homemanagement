@@ -1,0 +1,17 @@
+POST https://us-central1-zottig-planer.cloudfunctions.net/app/eventtemplates
+Content-Type: application/json
+
+
+{
+  "category": "testCategory",
+  "name": "test1",
+  "weight": 150,
+  "durationInMinutes": 100,
+  "weights": [{"category": "testCategory", "weight": 23}],
+  "postProcessing": ""
+}
+
+############
+
+GET https://us-central1-zottig-planer.cloudfunctions.net/app/eventtemplates?category=testCategory
+Authorization: Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjE0ZWI4YTNiNjgzN2Y2MTU4ZWViNjA3NmU2YThjNDI4YTVmNjJhN2IiLCJ0eXAiOiJKV1QifQ.eyJyb2xlIjoicGxhbmVyIiwiaXNzIjoiaHR0cHM6Ly9zZWN1cmV0b2tlbi5nb29nbGUuY29tL3pvdHRpZy1wbGFuZXIiLCJhdWQiOiJ6b3R0aWctcGxhbmVyIiwiYXV0aF90aW1lIjoxNjg5NzA2MzExLCJ1c2VyX2lkIjoiQWpCeXFFcXR3MWg2R24wNG5RNkRsRVNpSm16MSIsInN1YiI6IkFqQnlxRXF0dzFoNkduMDRuUTZEbEVTaUptejEiLCJpYXQiOjE2ODk3MDYzMTEsImV4cCI6MTY4OTcwOTkxMSwiZW1haWwiOiJpbGphX3dpbm9rdXJvd0B5YWhvby5jb20iLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZW1haWwiOlsiaWxqYV93aW5va3Vyb3dAeWFob28uY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.NmJeczMDj5glx9gEU0ZRZ08lM4myZYvB6NpE8XFuBx4DZNwHMgqjRGDkHMan-LO3n2udXLhNDpIbmedb-MpNpZzX3RSxa_JlyQu2n91jrF_N-0HBFZyAvczwKwTnZ8QnvJGTr0gRvdKBPGpWx-dIH5XEg2BrLE_IvbtRliWNNIaTsy2iKvqtxpJbb5N_ZUaqcP1TWfkxELzFBDCUXmbNQcofNckG36gWOB-FW53luMmrDOKRkXa_XxvOnGSsQDKu87n7l8QpSmvx2Y57TdpaIF3zRP4zQhtEh_Rk_w4o3egl-ss_f9qNbqQzq1sXGOqy6ukgTSY7iiIn7o48z0H1Kw
